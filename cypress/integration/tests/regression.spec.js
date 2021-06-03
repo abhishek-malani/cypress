@@ -204,13 +204,4 @@ describe('Doing regression testing on flight booking app', ()=>{
         searchFlights.verifyTitle();
     })
 
-    it.only('invalid from date and validate results',()=>{
-        searchFlights.visit(testData.url);
-        searchFlights.checkForImage();
-        searchFlights.enterOriginCity(testData.fromCity);
-        searchFlights.enterDesitnationCity(testData.toCity);
-        searchFlights.enterTravelFromDate('40');
-        searchFlights.verifyButtonisDisabled();
-    })
-
 })
