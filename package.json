@@ -1,0 +1,17 @@
+{
+  "name": "ui_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test_headless": "npx cypress run --spec 'cypress/integration/tests/regression.spec.js'",
+    "test": " npx cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.4.0",
+    "cypress-xpath": "^1.6.2"
+  }
+}
