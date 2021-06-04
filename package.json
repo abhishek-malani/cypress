@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test_headless": "npx cypress run --spec 'cypress/integration/tests/regression.spec.js'--browser chrome --reporter mochawesome",
-    "test": "npx cypress open"
+    "test": "./node_modules/.bin/cypress run --spec cypress/integration/test/regression.spec.js --browser chrome --reporter mochawesome"
   },
   "keywords": [],
   "author": "",
