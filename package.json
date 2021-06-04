@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test_headless": "npx cypress run --spec 'cypress/integration/tests/regression.spec.js'",
-    "test": " npx cypress open"
+    "test_headless": "npx cypress run --spec 'cypress/integration/tests/regression.spec.js'--browser chrome --reporter mochawesome",
+    "test": "npx cypress open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^7.4.0",
-    "cypress-xpath": "^1.6.2"
+    "cypress-xpath": "^1.6.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   }
 }

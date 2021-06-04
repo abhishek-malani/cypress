@@ -1,13 +1,11 @@
 import enterSearchParams from '../../pages/searchFlights';
 import validateSearchResult from '../../pages/resultsPage';
 import {testData} from '../../fixtures/testData';
-import commonUtils from '../../utils/commonUtils';
 
 describe('Doing regression testing on flight booking app', ()=>{
 
     const searchFlights = new enterSearchParams();
     const validateResults = new validateSearchResult();
-    const apiCall = new commonUtils();
 
     it.only('Searching without to date and validate results', ()=>{
         var minPrice;
